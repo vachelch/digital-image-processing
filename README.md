@@ -1,10 +1,11 @@
 # Digital Image Processing
 ## Description
-A C++ realization of varieties of image processing functions, including: image enhancement, edge detection, morphology processing etc. More contents will be obtained and code style is under revising.
+C++ realization of varieties of image processing functions, including: image enhancement, edge detection, morphology processing etc. More contents will be obtained and code style is under revising.
 
 ## What this repo incldue, currently?
 You can find all APIs in the header `Utils.h`
-### Image IO:
+
+#### Image IO:
 ```ascii
 * Read Image (gray level)
 * Write Image (gray level)
@@ -12,7 +13,7 @@ You can find all APIs in the header `Utils.h`
 * Write Image RGB 
 ```
 
-### Enhancement:
+#### Enhancement:
 ```ascii
 * Transform
 * Denoise
@@ -28,7 +29,7 @@ You can find all APIs in the header `Utils.h`
     * Obtain the PSNR score of the given image
 ```
 
-### Edge: 
+#### Edge: 
 ```ascii
 * Edge Detection
     * First Order Edge Detection
@@ -39,7 +40,7 @@ You can find all APIs in the header `Utils.h`
     * Unsharp Masking
 ```
 
-### Morphology:
+#### Morphology:
 ```ascii
 * Dilation
 * Erosion
@@ -48,6 +49,17 @@ You can find all APIs in the header `Utils.h`
 * Thinning
 * Skeletonizing
 ```
+
+## How to use?
+```bash
+git clone git@github.com:vachelch/digital-image-processing.git
+cd digital-image-processing
+make main
+```
+
+## What's more?
+You may find that '.raw' image is unable to be openned, that is because '.raw' is not the usual 'jpg' or 'png' image format, it's all raw pixel value in it. If you meet the problem, and meanwhile you don't have photoshop installed in you PC, I recommender [Raw Pixel Viewer](http://rawpixels.net/) for you.
+
 
 
 
