@@ -2,14 +2,17 @@
 ## Description
 A C++ realization of varieties of image processing functions, including: image enhancement, edge detection, morphology processing etc. More contents will be obtained and code style is under revising.
 
-## Classes
-Image IO:
+## What this repo incldue, currently?
+### Image IO:
+```ascii
 * Read Image (gray level)
 * Write Image (gray level)
 * Write Image RGB 
 * Write Image RGB 
+```
 
-Enhancement:
+### Enhancement:
+```ascii
 * Transform
 * Denoise
 	* Low pass filtering (for uniform nosie)
@@ -20,23 +23,31 @@ Enhancement:
 	* Local Equilization
 * PSNR
 	* Obtain the PSNR score of the given image
+```
 
-Edge: 
+### Edge: 
+```ascii
 * Edge Detection
 	* First Order Edge Detection
 	* Second Order Edge Detection
 	* Canny Edge Detection
 * Edge Crispening
 	* Unsharp Masking
+```
 
-Morphology:
+### Morphology:
+```ascii
 	* Dilation
 	* Erosion
 	* Boundary Extraction
 	* Connected Component Labeling
 	* thinning
 	* skeletonizing
+```
 
+
+## How to use?
+You can find all APIs in the header `Utils.h`
 ```C++
 class Image_IO{
 public:
